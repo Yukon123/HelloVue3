@@ -22,6 +22,11 @@ const routes = [
     name: 'usehook',
     component: () => import(/* webpackChunkName: "about" */ '../views/useHook.vue'),
   },
+  {
+    path: '/sourceCode',
+    name: 'sourceCode',
+    component: () => import(/* webpackChunkName: "about" */ '../views/sourceCode.vue'),
+  },
 ]
 
 const router = createRouter({

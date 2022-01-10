@@ -1,13 +1,15 @@
 <template>
   <div class="">
     <h1>Vue2 Opthion架构</h1>
+    <!-- 计数器 -->
     <h2>{{ counter }}</h2>
     <button @click="increase">增加</button>
     <button @click="decrease">减少</button>
     <div ref="twiceRef">两倍的计数器{{ twiceCount }}</div>
+    <!-- 学生信息 -->
     <div>{{ student.firstName + ' ' + student.lastName }}</div>
     <div @click="student.firstName = '王'">点击变老王儿子</div>
-    <div>{{ '学生姓' + firstName }}</div>
+    <div>{{ '学生姓' + student.firstName }}</div>
   </div>
 </template>
 
@@ -45,7 +47,7 @@ export default {
   created() {
     console.log('OptionApi计数器生成了')
   },
-  // 第一次可以获得挂载后的DOM节点 也就是通过this.$refs,xx
+  // 第一次可以获得挂载后的DOM节点
   mounted() {
     console.log('OptionApi计数器挂载了')
   },

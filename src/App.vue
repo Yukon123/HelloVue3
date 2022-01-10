@@ -2,6 +2,7 @@
   <div id="nav">
     <router-link to="/vue2">vue2</router-link> | <router-link to="/vue3">vue3</router-link> |
     <router-link to="/setup">setup</router-link>| <router-link to="/usehook">usehook</router-link> |
+    <router-link to="/sourceCode">sourceCode</router-link>
   </div>
   <router-view />
 </template>
